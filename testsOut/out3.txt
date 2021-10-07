@@ -1,0 +1,7 @@
+Filled container:
+Container contains 5 elements.
+0: It is tree: age = 100.Name = Dubok. GetQuotient: 0.400000
+1: It is tree: age = 34345.Name = tree. GetQuotient: 0.500000
+2: It is tree: age = 3112.Name = osina. GetQuotient: 0.600000
+3: It is tree: age = 12345.Name = Sosna. GetQuotient: 0.400000
+4: It is tree: age = 22.Name = Klen. GetQuotient: 0.250000

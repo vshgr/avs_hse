@@ -1,0 +1,8 @@
+Filled container:
+Container contains 6 elements.
+0: It is flower: type = WILD.Name = Tsvetochek. GetQuotient: 0.300000
+1: It is flower: type = GARDEN.Name = Romashka. GetQuotient: 0.375000
+2: It is flower: type = WILD.Name = Oduvanchik. GetQuotient: 0.300000
+3: It is flower: type = GARDEN.Name = Pion. GetQuotient: 0.500000
+4: It is flower: type = GARDEN.Name = Rosa. GetQuotient: 0.500000
+5: It is flower: type = GARDEN.Name = Tulpan. GetQuotient: 0.333333

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alisa/CLionProjects/avs_plants_01/bush.h
+stdio.h
+-
+
+/Users/alisa/CLionProjects/avs_plants_01/container.c
+stdlib.h
+-
+container.h
+/Users/alisa/CLionProjects/avs_plants_01/container.h
+
+/Users/alisa/CLionProjects/avs_plants_01/container.h
+plant.h
+/Users/alisa/CLionProjects/avs_plants_01/plant.h
+
+/Users/alisa/CLionProjects/avs_plants_01/flower.h
+stdio.h
+-
+
+/Users/alisa/CLionProjects/avs_plants_01/plant.h
+flower.h
+/Users/alisa/CLionProjects/avs_plants_01/flower.h
+tree.h
+/Users/alisa/CLionProjects/avs_plants_01/tree.h
+bush.h
+/Users/alisa/CLionProjects/avs_plants_01/bush.h
+
+/Users/alisa/CLionProjects/avs_plants_01/tree.c
+stdlib.h
+-
+tree.h
+/Users/alisa/CLionProjects/avs_plants_01/tree.h
+
+/Users/alisa/CLionProjects/avs_plants_01/tree.h
+stdio.h
+-
+

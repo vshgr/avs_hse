@@ -1,0 +1,12 @@
+Filled container:
+Container contains 10 elements.
+0: It is bush: month = APRIL.Name = blbyjleyir. GetQuotient: 0.400000
+1: It is bush: month = FEBRUARY.Name = hznplwjlfa. GetQuotient: 0.100000
+2: It is bush: month = SEPTEMBER.Name = ocxfulasos. GetQuotient: 0.400000
+3: It is tree: age = 20530.Name = ahyfhproel. GetQuotient: 0.400000
+4: It is bush: month = DECEMBER.Name = wwuusdmjan. GetQuotient: 0.300000
+5: It is tree: age = 12664.Name = nfxszdflim. GetQuotient: 0.100000
+6: It is tree: age = 80298.Name = pmstjjulyp. GetQuotient: 0.200000
+7: It is bush: month = APRIL.Name = uvmagmejdk. GetQuotient: 0.300000
+8: It is flower: type = HOUSE.Name = yevbgutyet. GetQuotient: 0.500000
+9: It is tree: age = 27007.Name = msfjhnzlfh. GetQuotient: 0.000000

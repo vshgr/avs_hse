@@ -1,12 +1,19 @@
 Filled container:
-Container contains 10 elements.
-0: It is tree: age = 100.Name = Dubok. GetQuotient: 0.400000
-1: It is flower: type = WILD.Name = Tsvetochek. GetQuotient: 0.300000
-2: It is flower: type = GARDEN.Name = Romashka. GetQuotient: 0.375000
-3: It is bush: month = DECEMBER.Name = Kust. GetQuotient: 0.250000
-4: It is bush: month = MARCH.Name = Kustik. GetQuotient: 0.333333
-5: It is bush: month = AUGUST.Name = Yagodka. GetQuotient: 0.428571
-6: It is flower: type = GARDEN.Name = Rosa. GetQuotient: 0.500000
-7: It is flower: type = GARDEN.Name = Tulpan. GetQuotient: 0.333333
-8: It is tree: age = 2945.Name = Elka. GetQuotient: 0.250000
-9: It is tree: age = 25.Name = Tuya. GetQuotient: 0.750000
+Container contains 17 elements.
+0: It is tree: age = 100. Name = Dubok. GetQuotient: 0.400000
+1: It is tree: age = 34345. Name = tree. GetQuotient: 0.500000
+2: It is tree: age = 3112. Name = osina. GetQuotient: 0.600000
+3: It is tree: age = 12345. Name = Sosna. GetQuotient: 0.400000
+4: It is tree: age = 22. Name = Klen. GetQuotient: 0.250000
+5: It is flower: type = WILD. Name = Tsvetochek. GetQuotient: 0.300000
+6: It is flower: type = GARDEN. Name = Romashka. GetQuotient: 0.375000
+7: It is flower: type = WILD. Name = Oduvanchik. GetQuotient: 0.300000
+8: It is flower: type = GARDEN. Name = Pion. GetQuotient: 0.500000
+9: It is flower: type = GARDEN. Name = Rosa. GetQuotient: 0.500000
+10: It is flower: type = GARDEN. Name = Tulpan. GetQuotient: 0.333333
+11: It is bush: month = OCTOBER. Name = Kustarnik. GetQuotient: 0.333333
+12: It is bush: month = FEBRUARY. Name = Shipovnik. GetQuotient: 0.333333
+13: It is bush: month = JUNE. Name = Romashka. GetQuotient: 0.375000
+14: It is bush: month = DECEMBER. Name = Kust. GetQuotient: 0.250000
+15: It is bush: month = NOVEMBER. Name = Kustik. GetQuotient: 0.333333
+16: It is bush: month = AUGUST. Name = Yagodka. GetQuotient: 0.428571

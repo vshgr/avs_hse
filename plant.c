@@ -63,21 +63,19 @@ struct plant *InRnd() {
     const int LENGTH = 10 + 1;
     struct plant *p;
     int k = 1 + rand() % 3;
+    p = (struct plant *) malloc(sizeof(struct plant));
     switch (k) {
         case 1:
-            p = (struct plant *) malloc(sizeof(struct plant));
             p->k = TREE;
             RndName(p->name, LENGTH);
             InRndTree(&p->t);
             return p;
         case 2:
-            p = (struct plant *) malloc(sizeof(struct plant));
             p->k = FLOWER;
             RndName(p->name, LENGTH);
             InRndFlower(&p->f);
             return p;
         case 3:
-            p = (struct plant *) malloc(sizeof(struct plant));
             p->k = BUSH;
             RndName(p->name, LENGTH);
             InRndBush(&p->b);
@@ -102,7 +100,7 @@ void OutPlant(struct plant *p, FILE *ofst) {
             fprintf(ofst, "Incorrect_plant!\n");
             return;
     }
-    fprintf(ofst, "Name = %s. GetQuotient: %f\n", p->name, GetQuotient(p));
+    fprintf(ofst, " Name = %s. GetQuotient: %f\n", p->name, GetQuotient(p));
 }
 
 // Для всех растений функция одинакова

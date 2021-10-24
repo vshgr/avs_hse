@@ -1,0 +1,8 @@
+Sorted container:
+Container contains 6 elements.
+0: It is bush: name = Yagodka, month = AUGUST. Quotient = 0.428571
+1: It is bush: name = Romashka, month = JUNE. Quotient = 0.375000
+2: It is bush: name = Kustarnik, month = OCTOBER. Quotient = 0.333333
+3: It is bush: name = Shipovnik, month = FEBRUARY. Quotient = 0.333333
+4: It is bush: name = Kustik, month = NOVEMBER. Quotient = 0.333333
+5: It is bush: name = Kust, month = DECEMBER. Quotient = 0.250000

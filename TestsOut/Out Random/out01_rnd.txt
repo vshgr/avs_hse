@@ -1,0 +1,12 @@
+Filled container:
+Container contains 10 elements.
+0: It is bush: name = wsndnvynje, month = SEPTEMBER. Quotient = 0.200000
+1: It is flower: name = lfnzpupkhz, type = WILD. Quotient = 0.100000
+2: It is flower: name = wjiwnmqxyv, type = HOUSE. Quotient = 0.200000
+3: It is tree: name = qgqvclhfvx, age = 80089. Quotient = 0.000000
+4: It is tree: name = tqmxswajuu, age = 72674. Quotient = 0.300000
+5: It is bush: name = fcgdcfogyu, month = MARCH. Quotient = 0.300000
+6: It is bush: name = bnppasosil, month = AUGUST. Quotient = 0.300000
+7: It is bush: name = lvkqpfzhjd, month = OCTOBER. Quotient = 0.000000
+8: It is bush: name = cpezuoeuoo, month = APRIL. Quotient = 0.700000
+9: It is tree: name = ajwaugxrjm, age = 56621. Quotient = 0.300000

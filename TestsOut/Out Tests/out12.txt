@@ -1,0 +1,7 @@
+Sorted container:
+Container contains 5 elements.
+0: It is tree: name = osina, age = 3112. Quotient = 0.600000
+1: It is tree: name = tree, age = 34345. Quotient = 0.500000
+2: It is tree: name = Dubok, age = 100. Quotient = 0.400000
+3: It is tree: name = Sosna, age = 12345. Quotient = 0.400000
+4: It is tree: name = Klen, age = 22. Quotient = 0.250000

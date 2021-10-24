@@ -1,0 +1,8 @@
+Sorted container:
+Container contains 6 elements.
+0: It is flower: name = Pion, type = GARDEN. Quotient = 0.500000
+1: It is flower: name = Rosa, type = GARDEN. Quotient = 0.500000
+2: It is flower: name = Romashka, type = GARDEN. Quotient = 0.375000
+3: It is flower: name = Tulpan, type = GARDEN. Quotient = 0.333333
+4: It is flower: name = Tsvetochek, type = WILD. Quotient = 0.300000
+5: It is flower: name = Oduvanchik, type = WILD. Quotient = 0.300000

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alisa/CLionProjects/avs_plants_02/container.cpp
+container.h
+/Users/alisa/CLionProjects/avs_plants_02/container.h
+
+/Users/alisa/CLionProjects/avs_plants_02/container.h
+plant.h
+/Users/alisa/CLionProjects/avs_plants_02/plant.h
+
+/Users/alisa/CLionProjects/avs_plants_02/main.cpp
+fstream
+-
+cstdlib
+-
+ctime
+-
+cstring
+-
+sys/stat.h
+-
+container.h
+/Users/alisa/CLionProjects/avs_plants_02/container.h
+
+/Users/alisa/CLionProjects/avs_plants_02/plant.h
+fstream
+/Users/alisa/CLionProjects/avs_plants_02/fstream
+

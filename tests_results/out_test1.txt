@@ -1,0 +1,18 @@
+Container is store 17 plants:
+0: Tree: age = 100, name = Dubok, GetQuotient = 0.4
+1: Tree: age = 34345, name = tree, GetQuotient = 0.5
+2: Tree: age = 3112, name = osina, GetQuotient = 0.6
+3: Tree: age = 12345, name = Sosna, GetQuotient = 0.4
+4: Tree: age = 22, name = Klen, GetQuotient = 0.25
+5: Flower: name = Tsvetochek, Type = Type.WILD, GetQuotient = 0.3
+6: Flower: name = Romashka, Type = Type.GARDEN, GetQuotient = 0.375
+7: Flower: name = Oduvanchik, Type = Type.WILD, GetQuotient = 0.3
+8: Flower: name = Pion, Type = Type.GARDEN, GetQuotient = 0.5
+9: Flower: name = Rosa, Type = Type.GARDEN, GetQuotient = 0.5
+10: Flower: name = Tulpan, Type = Type.GARDEN, GetQuotient = 0.3333333333333333
+11: Bush: month = Month.OCTOBER, name = Kustarnik, GetQuotient = 0.3333333333333333
+12: Bush: month = Month.FEBRUARY, name = Shipovnik, GetQuotient = 0.3333333333333333
+13: Bush: month = Month.JUNE, name = Romashka, GetQuotient = 0.375
+14: Bush: month = Month.DECEMBER, name = Kust, GetQuotient = 0.25
+15: Bush: month = Month.NOVEMBER, name = Kustik, GetQuotient = 0.3333333333333333
+16: Bush: month = Month.AUGUST, name = Yagodka, GetQuotient = 0.42857142857142855

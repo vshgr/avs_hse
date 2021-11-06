@@ -1,0 +1,12 @@
+Sorted container:
+Container is store 10 plants:
+0: Bush: month = Month.AUGUST, name = or, GetQuotient = 0.5
+1: Flower: name = PikeR, Type = Type.GARDEN, GetQuotient = 0.4
+2: Flower: name = ccYeDZiFGWELn, Type = Type.WILD, GetQuotient = 0.15384615384615385
+3: Flower: name = aBsSFnJsyvrVIAKlTa, Type = Type.HOUSE, GetQuotient = 0.1111111111111111
+4: Flower: name = jVczxHqsi, Type = Type.GARDEN, GetQuotient = 0.1111111111111111
+5: Flower: name = LnJpAvydBISIfVu, Type = Type.HOUSE, GetQuotient = 0.06666666666666667
+6: Tree: age = 24325, name = uXEEDwpLckgxAsHVKOUP, GetQuotient = 0.05
+7: Bush: month = Month.AUGUST, name = jUEAMSTEMmFOTgrgQlU, GetQuotient = 0.0
+8: Tree: age = 44928, name = HZPKvgc, GetQuotient = 0.0
+9: Flower: name = cdEHjj, Type = Type.HOUSE, GetQuotient = 0.0

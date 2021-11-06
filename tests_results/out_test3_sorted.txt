@@ -1,0 +1,8 @@
+Sorted container:
+Container is store 6 plants:
+0: Flower: name = Pion, Type = Type.GARDEN, GetQuotient = 0.5
+1: Flower: name = Rosa, Type = Type.GARDEN, GetQuotient = 0.5
+2: Flower: name = Romashka, Type = Type.GARDEN, GetQuotient = 0.375
+3: Flower: name = Tulpan, Type = Type.GARDEN, GetQuotient = 0.3333333333333333
+4: Flower: name = Tsvetochek, Type = Type.WILD, GetQuotient = 0.3
+5: Flower: name = Oduvanchik, Type = Type.WILD, GetQuotient = 0.3

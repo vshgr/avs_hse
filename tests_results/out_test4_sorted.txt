@@ -1,0 +1,8 @@
+Sorted container:
+Container is store 6 plants:
+0: Bush: month = Month.AUGUST, name = Yagodka, GetQuotient = 0.42857142857142855
+1: Bush: month = Month.JUNE, name = Romashka, GetQuotient = 0.375
+2: Bush: month = Month.OCTOBER, name = Kustarnik, GetQuotient = 0.3333333333333333
+3: Bush: month = Month.FEBRUARY, name = Shipovnik, GetQuotient = 0.3333333333333333
+4: Bush: month = Month.NOVEMBER, name = Kustik, GetQuotient = 0.3333333333333333
+5: Bush: month = Month.DECEMBER, name = Kust, GetQuotient = 0.25

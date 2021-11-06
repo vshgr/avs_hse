@@ -1,0 +1,6 @@
+Container is store 5 plants:
+0: Tree: age = 100, name = Dubok, GetQuotient = 0.4
+1: Tree: age = 34345, name = tree, GetQuotient = 0.5
+2: Tree: age = 3112, name = osina, GetQuotient = 0.6
+3: Tree: age = 12345, name = Sosna, GetQuotient = 0.4
+4: Tree: age = 22, name = Klen, GetQuotient = 0.25

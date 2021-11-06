@@ -1,0 +1,7 @@
+Container is store 6 plants:
+0: Flower: name = Tsvetochek, Type = Type.WILD, GetQuotient = 0.3
+1: Flower: name = Romashka, Type = Type.GARDEN, GetQuotient = 0.375
+2: Flower: name = Oduvanchik, Type = Type.WILD, GetQuotient = 0.3
+3: Flower: name = Pion, Type = Type.GARDEN, GetQuotient = 0.5
+4: Flower: name = Rosa, Type = Type.GARDEN, GetQuotient = 0.5
+5: Flower: name = Tulpan, Type = Type.GARDEN, GetQuotient = 0.3333333333333333

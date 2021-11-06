@@ -26,11 +26,7 @@ class Flower(Plant):
             self.type = Type.HOUSE
         i += 1
         return i
-
-    def Print(self, i):
-        print(i, ": Flower: type = ", self.type, ", name = ", self.name, ", Quotient = ", self.GetQuotient())
-        pass
-
+    
     def Write(self, ostream, i):
         ostream.write("{}: Flower: name = {}, Type = {}, GetQuotient = {}".format \
                           (i, self.name, self.type, self.GetQuotient()))

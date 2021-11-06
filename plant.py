@@ -6,9 +6,6 @@ class Plant:
     def ReadStrArray(self, strArray, i):
         pass
 
-    def Print(self, i):
-        pass
-
     def Write(self, ostream, i):
         pass
 

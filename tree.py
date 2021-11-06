@@ -14,10 +14,6 @@ class Tree(Plant):
         i += 1
         return i
 
-    def Print(self, i):
-        print(i, ": Tree: age = ", self.age, ", name = ", self.name, ", Quotient = ", self.GetQuotient())
-        pass
-
     def Write(self, ostream, i):
         ostream.write("{}: Tree: age = {}, name = {}, GetQuotient = {}".format \
                           (i, self.age, self.name, self.GetQuotient()))

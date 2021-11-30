@@ -1,0 +1,126 @@
+     1                                  extern strlen
+     2                                  extern memcpy
+     3                                  extern intSize
+     4                                  extern plantSize
+     5                                  section .text
+     6                                  global GetQuotient
+     7                                  global BubbleSort
+     8                                  GetQuotient:                                
+     9 00000000 55                              push    rbp                       
+    10 00000001 4889E5                          mov     rbp, rsp                    ; пролог функции
+    11 00000004 4883EC20                        sub     rsp, 32                     ; выделяем стекфрейм
+    12 00000008 48897DF8                        mov     [rbp - 8], rdi              ; в rdi лежит аргумент функции — сохраним его
+    13 0000000C E8(00000000)                    call    strlen                      ; не трогая аргумент, вызовем strlen от него
+    14 00000011 8945F4                          mov     [rbp - 12], eax             ; сохраним результат strlen
+    15 00000014 C745F000000000                  mov     dword [rbp - 16], 0         ; int vowels = 0
+    16 0000001B C745EC00000000                  mov     dword [rbp - 20], 0         ; int i = 0
+    17                                  .GetQuotient_loop_begin:                    ; заголовок цикла
+    18 00000022 8B45EC                          mov     eax, [rbp - 20]             ; перемещаем значение i в регистр eax
+    19 00000025 3B45F4                          cmp     eax, [rbp - 12]             ; сравниваем с длиной строки
+    20 00000028 7D31                            jge     .GetQuotient_loop_out                    ; если i больше или равно длины строки, то выходим из цикла
+    21 0000002A 488B45F8                        mov     rax, [rbp - 8]              ; достаем указатель на строку со стека
+    22 0000002E 0FBE00                          movsx   eax, byte [rax]             ; смотрим значение текущего символа
+    23 00000031 83F861                          cmp     eax, 'a'                    ; дальше сравниваем много раз его и смотрим, гласная ли это
+    24 00000034 7419                            je      .if_vowel                   ; если это гласная, то прыгаем в иф
+    25 00000036 83F86F                          cmp     eax, 'o'
+    26 00000039 7414                            je      .if_vowel
+    27 0000003B 83F869                          cmp     eax, 'i'
+    28 0000003E 740F                            je      .if_vowel
+    29 00000040 83F865                          cmp     eax, 'e'
+    30 00000043 740A                            je      .if_vowel
+    31 00000045 83F875                          cmp     eax, 'u'
+    32 00000048 7405                            je      .if_vowel
+    33 0000004A 83F879                          cmp     eax, 'y'
+    34 0000004D 7503                            jne     .GetQuotient_loop_end       ; если сюда пришли, то это не гласная и можно иф перепрыгивать 
+    35                                  .if_vowel:                                  ; блок иф при выполнении условия
+    36 0000004F FF45F0                          inc     dword [rbp - 16]            ; vowels++
+    37                                  .GetQuotient_loop_end:
+    38 00000052 48FF45F8                        inc     qword [rbp - 8]             ; temp++
+    39 00000056 FF45EC                          inc     dword [rbp - 20]            ; i++
+    40 00000059 EBC7                            jmp     .GetQuotient_loop_begin     ; прыгаем в заголовок цикла
+    41                                  .GetQuotient_loop_out:
+    42 0000005B F20F2A45F0                      cvtsi2sd xmm0, [rbp - 16]           ; достаем vowels
+    43 00000060 F20F2A4DF4                      cvtsi2sd xmm1, [rbp - 12]           ; достаем strlen
+    44 00000065 F20F5EC1                        divsd   xmm0, xmm1                  ; делим wovels на strlen, в xmm0 по соглашению о вызовах возвращается double
+    45 00000069 4889EC                          mov     rsp, rbp                    ; эпилог функции
+    46 0000006C 5D                              pop     rbp
+    47 0000006D C3                              ret
+    48                                  BubbleSort:
+    49 0000006E 55                              push    rbp
+    50 0000006F 4889E5                          mov     rbp, rsp                    ; пролог функции
+    51 00000072 4883EC50                        sub     rsp, 80                     ; выделяем стекфрейм
+    52 00000076 48897DF8                        mov     [rbp - 8], rdi              ; сохраняем cont
+    53 0000007A 8975F4                          mov     [rbp - 12], esi             ; сохраняем len
+    54 0000007D C745F000000000                  mov     dword [rbp - 16], 0         ; int i = 0
+    55                                  .BubbleSort_loop_begin:                     ; заголовок внешнего цикла
+    56 00000084 8B45F4                          mov     eax, [rbp - 12]             ; достаем len
+    57 00000087 FFC8                            dec     eax                         ; вычитаем 1
+    58 00000089 3945F0                          cmp     [rbp - 16], eax             ; если i >= len - 1, то выходим из цикла
+    59 0000008C 0F8DF1000000                    jge     .BubbleSort_loop_out
+    60 00000092 8945EC                          mov     [rbp - 20], eax             ; j = len - 1
+    61                                  .BubbleSort_inner_loop_begin:               ; заголовок внутреннего цикла
+    62 00000095 8B45EC                          mov     eax, [rbp - 20]             ; достаем j
+    63 00000098 3B45F0                          cmp     eax, [rbp - 16]             ; сравниваем c i
+    64 0000009B 0F8EDA000000                    jle     .BubbleSort_inner_loop_out  ; если j <= i, то выходим из внутреннего цикла
+    65                                  		
+    66 000000A1 488B45F8                        mov     rax, [rbp - 8]
+    67 000000A5 8B0C25[00000000]                mov     ecx, [plantSize]
+    68 000000AC 8B55EC                          mov     edx, [rbp - 20]
+    69 000000AF 83EA01                          sub     edx, 1
+    70 000000B2 0FAFCA                          imul    ecx, edx
+    71 000000B5 4863C9                          movsxd  rcx, ecx
+    72 000000B8 4801C8                          add     rax, rcx
+    73 000000BB 488945E0                        mov     [rbp - 32], rax             ; посчитали void *first
+    74                                  		
+    75 000000BF 488B45F8                        mov     rax, [rbp - 8]
+    76 000000C3 8B0C25[00000000]                mov     ecx, [plantSize]
+    77 000000CA 0FAF4DEC                        imul    ecx, [rbp - 20]
+    78 000000CE 4863C9                          movsxd  rcx, ecx
+    79 000000D1 4801C8                          add     rax, rcx
+    80 000000D4 488945D8                        mov     [rbp - 40], rax             ; посчитали void *second
+    81                                  		
+    82                                  
+    83 000000D8 488B7DE0                        mov     rdi, [rbp - 32]             ; достаем first
+    84 000000DC 48630425[00000000]              movsxd  rax, dword [intSize]
+    85 000000E4 4801C7                          add     rdi, rax                    ; прибавляем к нему intSize
+    86 000000E7 E814FFFFFF                      call    GetQuotient                 ; вызываем первый GetQuotient
+    87 000000EC F20F1145C0                      movsd   qword [rbp - 64], xmm0      ; сохраняем результат вычисления в aligned-адрес
+    88 000000F1 488B7DD8                        mov     rdi, qword [rbp - 40]       ; достаем secind
+    89 000000F5 48630425[00000000]              movsxd  rax, dword [intSize]	
+    90 000000FD 4801C7                          add     rdi, rax                    ; прибавляем к нему intSize
+    91 00000100 E8FBFEFFFF                      call    GetQuotient                 ; вызываем второй GetQuotient
+    92 00000105 F20F104DC0                      movsd   xmm1, qword [rbp - 64]      ; результат последнего вычисления в xmm0, восстанавливаем первый в xmm1
+    93 0000010A 660F2EC1                        ucomisd xmm0, xmm1                  ; сравниваем
+    94 0000010E 7663                            jbe     .BubbleSort_inner_loop_end  ; если первое >= второе, то уходим на следующий круг
+    95 00000110 8B0425[00000000]                mov     eax, dword [plantSize]      ; достаем plantSize
+    96 00000117 4889E1                          mov     rcx, rsp                   
+    97 0000011A 488965D0                        mov     [rbp - 48], rsp             ; сохраняем rsp
+    98 0000011E 4889C1                          mov     rcx, rax
+    99 00000121 4883C10F                        add     rcx, 15
+   100 00000125 4883E1F0                        and     rcx, -16                    ; выделяем на стеке память под plantSize с учетом align
+   101 00000129 4829CC                          sub     rsp, rcx                    ; двигаем верхушку стека
+   102 0000012C 488965B8                        mov     [rbp - 72], rsp             ; сохраняем указатель на temp
+   103 00000130 488B7DB8                        mov     rdi, qword [rbp - 72]       ; делаем наши свапы
+   104 00000134 488B75D8                        mov     rsi, qword [rbp - 40]
+   105 00000138 48631425[00000000]              movsxd  rdx, dword [plantSize]
+   106 00000140 E8(00000000)                    call    memcpy
+   107 00000145 488B7DD8                        mov     rdi, qword [rbp - 40]
+   108 00000149 488B75E0                        mov     rsi, qword [rbp - 32]
+   109 0000014D 48631425[00000000]              movsxd  rdx, dword [plantSize]
+   110 00000155 E8(00000000)                    call    memcpy
+   111 0000015A 488B7DE0                		mov     rdi, qword [rbp - 32]
+   112 0000015E 488B75B8                        mov     rsi, qword [rbp - 72]
+   113 00000162 48631425[00000000]              movsxd  rdx, dword [plantSize]
+   114 0000016A E8(00000000)                    call    memcpy
+   115 0000016F 488B65D0                        mov     rsp, qword [rbp - 48]      ; возвращаем старую верхушку стека
+   116                                  .BubbleSort_inner_loop_end:                                   
+   117 00000173 FF4DEC                          dec     dword [rbp - 20]           ; j--
+   118 00000176 E91AFFFFFF                      jmp     .BubbleSort_inner_loop_begin
+   119                                  .BubbleSort_inner_loop_out:
+   120                                  .BubbleSort_loop_end:
+   121 0000017B FF45F0                          inc     dword [rbp - 16]           ; i++
+   122 0000017E E901FFFFFF                      jmp     .BubbleSort_loop_begin
+   123                                  .BubbleSort_loop_out:
+   124 00000183 4889EC                          mov     rsp, rbp
+   125 00000186 5D                              pop     rbp
+   126 00000187 C3                              ret

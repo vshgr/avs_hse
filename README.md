@@ -27,7 +27,8 @@
 test1 - 0.00072 sec  
 test2 - 0.00077 sec  
 test3 - 0.00071 sec  
-test4 - 0.000704 sec  
+test4 - 0.00070 sec  
+test5 - 0.00050 sec  
 
 Random tests:  
 test10 - 0.000653 sec  

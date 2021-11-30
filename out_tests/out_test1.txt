@@ -1,0 +1,19 @@
+Filled container:
+Container contains 17 elements
+0 : This is tree: name = Dubokaaaoooeueue, age = 100, quotient = 0.8125
+1 : This is tree: name = tree, age = 34345, quotient = 0.5
+2 : This is tree: name = osina, age = 3112, quotient = 0.6
+3 : This is tree: name = Sosna, age = 12345, quotient = 0.4
+4 : This is tree: name = Klen, age = 22, quotient = 0.25
+5 : This is flower: name = Tsvetochek, type = GARDEN, quotient = 0.3
+6 : This is flower: name = Romashka, type = HOUSE, quotient = 0.375
+7 : This is flower: name = Oduvanchik, type = GARDEN, quotient = 0.3
+8 : This is flower: name = Pion, type = WILD, quotient = 0.5
+9 : This is flower: name = Rosa, type = WILD, quotient = 0.5
+10 : This is flower: name = Tulpan, type = GARDEN, quotient = 0.333333
+11 : This is bush: name = Kustarnik, month = JUNE, quotient = 0.333333
+12 : This is bush: name = Shipovnik, month = SEPTEMBER, quotient = 0.333333
+13 : This is bush: name = Romashka, month = MARCH, quotient = 0.375
+14 : This is bush: name = Kust, month = JANUARY, quotient = 0.25
+15 : This is bush: name = Kustik, month = AUGUST, quotient = 0.333333
+16 : This is bush: name = Yagodka, month = JULY, quotient = 0.428571

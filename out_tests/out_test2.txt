@@ -1,0 +1,7 @@
+Filled container:
+Container contains 5 elements
+0 : This is tree: name = Dubok, age = 100, quotient = 0.4
+1 : This is tree: name = tree, age = 34345, quotient = 0.5
+2 : This is tree: name = osina, age = 3112, quotient = 0.6
+3 : This is tree: name = Sosna, age = 12345, quotient = 0.4
+4 : This is tree: name = Klen, age = 22, quotient = 0.25

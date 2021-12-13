@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alisa/CLionProjects/avs_threads/main.cpp
+iostream
+-
+thread
+-
+shooter.h
+/Users/alisa/CLionProjects/avs_threads/shooter.h
+
+/Users/alisa/CLionProjects/avs_threads/random.h
+iostream
+-
+
+/Users/alisa/CLionProjects/avs_threads/shooter.cpp
+shooter.h
+/Users/alisa/CLionProjects/avs_threads/shooter.h
+
+/Users/alisa/CLionProjects/avs_threads/shooter.h
+iostream
+-
+mutex
+-
+chrono
+-
+random.h
+/Users/alisa/CLionProjects/avs_threads/random.h
+

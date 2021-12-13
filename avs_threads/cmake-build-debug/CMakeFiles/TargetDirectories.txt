@@ -1,0 +1,3 @@
+/Users/alisa/CLionProjects/avs_threads/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alisa/CLionProjects/avs_threads/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alisa/CLionProjects/avs_threads/cmake-build-debug/CMakeFiles/avs_threads.dir
